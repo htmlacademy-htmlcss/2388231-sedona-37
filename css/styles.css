@@ -1,0 +1,74 @@
+/*===========Reset-style==========*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+nav,footer,header{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;}
+input,button{font-family:inherit;}
+button{cursor: pointer;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+/*===========Fonts==========*/
+@font-face {
+  font-family: "PtSans";
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PtSans";
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/*--------------------*/
+body{
+  font-family: "PtSans";
+  background-color: #F2F2F2;
+  font-size: 18px;
+  padding: 0 40px 0 40px;
+}
+.wrapper{
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.visualli-hidden {
+
+}
+/*===========HEADER==========*/
+
+.page-header {
+  padding: 0 70px 0 70px;
+}
+.navigation {}
+.header-logo {}
+.header-logo__link {}
+.header-logo__image {}
+.navigation-list {}
+.navigation-list__item {}
+.navigation-list__link {}
+.navigation-user {}
+.navigation-user__item {}
+.navigation-user__link {}
+.navigation-user__search {}
+
+.navigation-user__favourites {}
+.navigation-user__favourites-value {}
+.user-favourites {}
+.user-favourites__number {}
+.navigation-user__button {}
+.button {}
+
+/*===========MAIN==========*/
+
+/*===========Hero==========*/
+.hero {
+  background: url("../images/background/background-hero.jpg") no-repeat center;
+}
+.visually-hidden {}
+.hero__images {}
