@@ -16,21 +16,19 @@
       <header data-test="header" class="page-header">
 
         <nav class="navigation">
-          <div class="header-logo">
-            <a href="index.html" class="header-logo__link">
-              <img src="images/logo/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны."
-                class="header-logo__image">
-            </a>
-          </div>
+
+          <a href="#" class="header-logo">
+            <img src="images/logo/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны.">
+          </a>
           <ul class="navigation-list">
             <li class="navigation-list__item">
-              <a href="index.html" class="navigation-list__link">Главная</a>
+              <a href="#" class="navigation-list__link navigation-list__link-active">Главная</a>
             </li>
             <li class="navigation-list__item">
               <a href="#" class="navigation-list__link">О седоне</a>
             </li>
             <li class="navigation-list__item">
-              <a href="#" class="navigation-list__link">Гостиницы</a>
+              <a href="catalog.html" class="navigation-list__link">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -48,11 +46,10 @@
               </span>
             </li>
             <li class="navigation-user__item">
-              <a href="#" class="navigation-user__link navigation-user__button button">Хочу сюда!</a>
+              <a href="#" class="navigation-user__button button">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
-
       </header>
 
       <!-- ======MAIN====== -->
@@ -77,86 +74,84 @@
           <form action="https://echo.htmlacademy.ru/" method="post" class="filter-content">
 
             <!-- ======Filter-right====== -->
-            <div class="filter__right">
-              <fieldset class="filter__group">
-                <legend class="filter__title">Инфраструктура:</legend>
-                <ul class="filter__list">
-                  <li class="filter__list-item">
-                    <label class="control">
-                      <input type="checkbox" name="pool" checked class="control-input">
-                      Бассейн
-                    </label>
-                  </li>
-                  <li class="filter__list-item">
-                    <label class="control">
-                      <input type="checkbox" name="parking" checked class="control-input">
-                      Парковка
-                    </label>
-                  </li>
-                  <li class="filter__list-item">
-                    <label class="control">
-                      <input type="checkbox" name="Wi-Fi" class="control-input">
-                      Wi-Fi
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+            <fieldset class="filter__group">
+              <legend class="filter__title">Инфраструктура:</legend>
+              <ul class="filter__list">
+                <li class="filter__list-item">
+                  <label class="control">
+                    <input type="checkbox" name="pool" checked class="control-input">
+                    Бассейн
+                  </label>
+                </li>
+                <li class="filter__list-item">
+                  <label class="control">
+                    <input type="checkbox" name="parking" checked class="control-input">
+                    Парковка
+                  </label>
+                </li>
+                <li class="filter__list-item">
+                  <label class="control">
+                    <input type="checkbox" name="Wi-Fi" class="control-input">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <fieldset class="filter__right-group">
-                <legend class="filter__right-title">Тип жилья:</legend>
-                <ul class="filter__list">
-                  <li class="filter__list-item">
-                    <label class="control">
-                      <input type="radio" name="housing-group" checked class="control-input" value="hotel">
-                      Гостиница
-                    </label>
-                  </li>
-                  <li class="filter__list-item">
-                    <label class="control">
-                      <input type="radio" name="housing-group" class="control-input" value="motel">
-                      Мотель
-                    </label>
-                  </li>
-                  <li class="filter__list-item">
-                    <label class="control">
-                      <input type="radio" name="housing-group" class="control-input" value="apartments">
-                      Апартаменты
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
+            <fieldset class="filter__right-group">
+              <legend class="filter__right-title">Тип жилья:</legend>
+              <ul class="filter__list">
+                <li class="filter__list-item">
+                  <label class="control">
+                    <input type="radio" name="housing-group" checked class="control-input" value="hotel">
+                    Гостиница
+                  </label>
+                </li>
+                <li class="filter__list-item">
+                  <label class="control">
+                    <input type="radio" name="housing-group" class="control-input" value="motel">
+                    Мотель
+                  </label>
+                </li>
+                <li class="filter__list-item">
+                  <label class="control">
+                    <input type="radio" name="housing-group" class="control-input" value="apartments">
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
             <!-- ======Filter-left====== -->
-            <div class="filter__left">
-              <fieldset class="filter__left-group">
-                <legend class="filter__left-title">Стоимость, ₽:</legend>
-                <label class="filter__price-container">
-                  <span class="filter__pice-legend">от</span>
-                  <input type="number" class="price-group" name="min-price" value="0" min="0" step="100">
-                </label>
-                <label class="filter__price-container">
-                  <span class="filter__pice-legend">до</span>
-                  <input type="number" class="price-group" name="max-price" value="9000" max="20000" step="100">
-                </label>
-                <div class="filter__price-slide">
-                  <div class="slider-block">
-                    <button class="slider__item" type="button">
-                      <span class="visually-hidden">кнопка минимальной цены</span>
-                    </button>
-                    <button class="slider__item" type="button">
-                      <span class="visually-hidden">кнопка максимальной цены</span>
-                    </button>
-                  </div>
 
+            <fieldset class="filter__left-group">
+              <legend class="filter__left-title">Стоимость, ₽:</legend>
+              <label class="filter__price-container">
+                <span class="filter__pice-legend">от</span>
+                <input type="number" class="price-group" name="min-price" value="0" min="0" step="100">
+              </label>
+              <label class="filter__price-container">
+                <span class="filter__pice-legend">до</span>
+                <input type="number" class="price-group" name="max-price" value="9000" max="20000" step="100">
+              </label>
+              <div class="filter__price-slide">
+                <div class="slider-block">
+                  <button class="slider__item" type="button">
+                    <span class="visually-hidden">кнопка минимальной цены</span>
+                  </button>
+                  <button class="slider__item" type="button">
+                    <span class="visually-hidden">кнопка максимальной цены</span>
+                  </button>
                 </div>
-              </fieldset>
-              <section class="filter__button-block">
-                <h3 class="visually-hidden">Применить или сбросить фильтр</h3>
-                <button class="button filter__button-accept" type="submit">Применить</button>
-                <button type="reset" class="filter__button-reset">Сбросить</button>
-              </section>
-            </div>
+
+              </div>
+            </fieldset>
+            <section class="filter__button-block">
+              <h3 class="visually-hidden">Применить или сбросить фильтр</h3>
+              <button class="button filter__button-accept" type="submit">Применить</button>
+              <button type="reset" class="filter__button-reset">Сбросить</button>
+            </section>
+
           </form>
         </section>
 
@@ -317,14 +312,14 @@
 
         <!-- ======Subscribe====== -->
         <section data-test="subscribe" class="subscribe">
-          <div class="section-center">
-            <h2 class="section__title">Подпишитесь на рассылку</h2>
-            <p class="section__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" class="subscribe__email" placeholder="Ваш e-mail" name="subscribe-email">
-              <input type="submit" class="subscribe__email" value="Подписаться">
-            </form>
-          </div>
+
+          <h2 class="text-strong-center">Подпишитесь на рассылку</h2>
+          <p class="text-center">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+            <input type="email" class="subscribe__email" placeholder="Ваш e-mail" name="subscribe-email">
+            <button type="button" class="subscribe__button">Подписаться</button>
+          </form>
+
         </section>
       </main>
 
