@@ -22,7 +22,7 @@
           <a href="#" class="header-logo">
             <img src="images/logo/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны.">
           </a>
-          <ul class="navigation-list">
+          <ul class="navigation-list list">
             <li class="navigation-list__item">
               <a href="#" class="navigation-list__link navigation-list__link-active">Главная</a>
             </li>
@@ -33,7 +33,7 @@
               <a href="catalog.html" class="navigation-list__link">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-user">
+          <ul class="navigation-user list">
             <li class="navigation-user__item">
               <a href="#" class="navigation-user__link navigation-user__search">
                 <span class="visually-hidden">Поиск</span>
@@ -81,7 +81,7 @@
           <!-- ======Advantages-features====== -->
 
           <!-- ======ROW====== -->
-          <ul class="advantages-features__list">
+          <ul class="advantages-features__list list">
             <li class="advantages-features__item-column block-image ">
               <div class="block-dark-blue block-text">
                 <h3 class="advantages-features__title">Настоящий городок</h3>
@@ -102,7 +102,7 @@
             <li class="advantages-features__item-column block-blue block-text block-text-center">
               <h3 class="advantages-features__title">Красивая<br>
                 дорога</h3>
-              <p class="advantages-text">Ехать&#160;в&#160;Седону&#160;из&#160;Лас&#8209;Вегаса совсем не скучно!</p>
+              <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages-features__item-column block-light-blue block-text block-text-center">
               <h3 class="advantages-features__title">Мало
@@ -132,7 +132,7 @@
           <!-- ======Advantages-services====== -->
 
 
-          <ul class="advantages-services">
+          <ul class="advantages-services list">
             <li class="advantages-services__column block-light-blue block-house">
               <h3 class="advantages-services__title">Жильё</h3>
               <p class="advantages-text">Рекомендуем пожить<br> в настоящем мотеле,<br>
@@ -161,7 +161,8 @@
             <p class="text-strong-center">Заинтересовались?</p>
             <p class="text-center">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
               гостиниц в Седоне</p>
-            <button type="button" class="search__button button button-brown">поиск гостиницы в седоне</button>
+            <button type="button" class="search__button button button-brown button-btn">поиск гостиницы в
+              седоне</button>
 
           </div>
 
@@ -174,7 +175,7 @@
           <p class="text-center">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <input type="email" class="subscribe__email" placeholder="Ваш e-mail" name="subscribe-email" required>
-            <button type="button" class="subscribe__button button blue-button">Подписаться</button>
+            <button type="submit" class="subscribe__button button blue-button button-btn">Подписаться</button>
           </form>
 
 
@@ -187,7 +188,7 @@
       <footer data-test="footer" class="page-footer">
         <h2 class="visually-hidden">Наши Контакты</h2>
         <p class="visually-hidden">Мы в соцсетях</p>
-        <ul class="footer-social__list">
+        <ul class="footer-social__list list">
           <li class="footer-social__item">
             <a class="footer-social__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
@@ -233,7 +234,7 @@
 
     <div class="modal-container modal-container-close" data-test="modal">
       <div class="modal modal-window">
-        <button type="button" class="modal__close-button">
+        <button type="button" class="modal__close-button button-btn">
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -263,7 +264,7 @@
               <div class="modal-people-count">
                 <label for="adult-person" class="modal-label">Взрослые:</label>
                 <div class="modal-count-block">
-                  <button class="modal-count-button button-reduce-person" type="button">
+                  <button class="modal-count-button button-reduce-person button-btn" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3" />
@@ -272,7 +273,7 @@
                   </button>
                   <input type="number" value="2" min="0" max="10" name="select-number" id="adult-person"
                     class="count-people">
-                  <button class="modal-count-button  button-add-person" type="button">
+                  <button class="modal-count-button  button-add-person button-btn" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3" />
@@ -285,9 +286,9 @@
 
                 <label for="child-person" class="modal-label">Дети:</label>
                 <div class="tooltip">
-                  <span class="visually-hidden">Дополнительная информация об отдыхе с детьми</span>
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
 
+                  <button class="tooltip-toggle button-btn" type="button" aria-labelledby="tooltip-label-date">
+                    <span class="visually-hidden">Дополнительная информация об отдыхе с детьми</span>
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13" cy="13" r="13" fill="#83B3D3" />
@@ -302,7 +303,7 @@
 
 
                 <div class="modal-count-block">
-                  <button class="modal-count-button  button-reduce-person" type="button">
+                  <button class="modal-count-button  button-reduce-person button-btn" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3" />
@@ -311,7 +312,7 @@
                   </button>
                   <input type="number" value="2" min="0" max="10" name="select-number" id="child-person"
                     class="count-people">
-                  <button class="modal-count-button button-add-person" type="button">
+                  <button class="modal-count-button button-add-person button-btn" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3" />
@@ -321,7 +322,7 @@
                 </div>
               </div>
             </div>
-            <button class="button blue-button button-search-hotel" type="submit">Найти</button>
+            <button class="button blue-button button-search-hotel button-btn" type="submit">Найти</button>
           </form>
         </section>
       </div>

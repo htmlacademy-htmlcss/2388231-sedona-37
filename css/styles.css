@@ -11,21 +11,10 @@
 html,
 body {
   height: 100%;
-  font-size: 100%;
-  line-height: 1;
-}
-
-button {
-  cursor: pointer;
-  font-family: inherit;
 }
 
 a {
   text-decoration: none;
-}
-
-ul li {
-  list-style-type: none;
 }
 
 /*--------------------*/
@@ -49,7 +38,7 @@ ul li {
 
 /*--------------------*/
 body {
-  font-family: "PtSans", "Arial", sans-serif;
+  font-family: "PtSans", Arial, sans-serif;
   background-color: #f2f2f2;
   font-size: 18px;
   color: #000000;
@@ -83,6 +72,10 @@ body {
   padding: 0px 70px;
 }
 
+.list li {
+  list-style-type: none;
+}
+
 .text-strong-center {
   font-size: 30px;
   font-weight: 700;
@@ -109,6 +102,11 @@ button.user-favourites:active {
 button.user-favourites:hover,
 button.user-favourites:focus {
   background-color: #6c9e42;
+}
+
+.button-btn {
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .button {
@@ -179,7 +177,7 @@ button.user-favourites:focus {
   display: block;
   position: absolute;
   top: 0;
-  left: 3px;
+  left: 0;
 }
 
 .navigation-list {
@@ -325,7 +323,7 @@ button.user-favourites:focus {
 
 
 .block-text-center {
-  padding: 110px 85px 110px 85px;
+  padding: 112px 81px 110px 82px;
 }
 
 .advantages-text {
@@ -391,7 +389,9 @@ button.user-favourites:focus {
 
 .block-suvenir {
   background-image: url("../images/icons/advantages/icon-3.svg");
+  background-size: 66px 72px;
 }
+
 
 .advantages-services__title {
   padding-top: 102px;
@@ -459,12 +459,12 @@ button.user-favourites:focus {
   line-height: 24px;
   width: 452px;
   font-size: 18px;
-  font-family: "PtSans", "Arial", sans-serif;
+  font-family: "PtSans", Arial, sans-serif;
 }
 
 .subscribe__email::placeholder {
   opacity: 0.6;
-  font-family: "PtSans", "Arial", sans-serif;
+  font-family: "PtSans", Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -902,7 +902,7 @@ button.user-favourites:focus {
   border-radius: 4px;
   outline: 2px solid #e5e5e5;
   appearance: none;
-  font-family: "PtSans", "Arial", sans-serif;
+  font-family: "PtSans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
@@ -981,11 +981,12 @@ button.user-favourites:focus {
 .card-hotel {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
   gap: 16px 20px;
-  align-items: center;
+  align-items: start;
 }
 
 .card-hotel__image-link {
