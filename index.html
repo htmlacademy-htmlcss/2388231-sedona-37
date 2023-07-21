@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1280px, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
@@ -22,7 +22,7 @@
           <a href="#" class="header-logo">
             <img src="images/logo/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны.">
           </a>
-          <ul class="navigation-list">
+          <ul class="navigation-list list">
             <li class="navigation-list__item">
               <a href="#" class="navigation-list__link navigation-list__link-active">Главная</a>
             </li>
@@ -33,7 +33,7 @@
               <a href="catalog.html" class="navigation-list__link">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-user">
+          <ul class="navigation-user list">
             <li class="navigation-user__item">
               <a href="#" class="navigation-user__link navigation-user__search">
                 <span class="visually-hidden">Поиск</span>
@@ -62,6 +62,7 @@
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
           <img src="images/content/hero-content.svg" height="352" width="458"
             alt="Добро пожаловать в великолепную Седону, потому что большой каньон отстой.">
+          <div class="hero-device"></div>
         </section>
 
         <!-- ======Advantages====== -->
@@ -80,7 +81,7 @@
           <!-- ======Advantages-features====== -->
 
           <!-- ======ROW====== -->
-          <ul class="advantages-features__list">
+          <ul class="advantages-features__list list">
             <li class="advantages-features__item-column block-image ">
               <div class="block-dark-blue block-text">
                 <h3 class="advantages-features__title">Настоящий городок</h3>
@@ -96,17 +97,17 @@
             <li class="advantages-features__item-column block-light-blue block-text block-text-center">
               <h3 class="advantages-features__title">Небольшая<br>
                 площадь</h3>
-              <p>Все достопримечательности находятся очень близко</p>
+              <p class="advantages-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantages-features__item-column block-blue block-text block-text-center">
               <h3 class="advantages-features__title">Красивая<br>
                 дорога</h3>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages-features__item-column block-light-blue block-text block-text-center">
               <h3 class="advantages-features__title">Мало
                 туристов</h3>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
 
 
@@ -131,20 +132,20 @@
           <!-- ======Advantages-services====== -->
 
 
-          <ul class="advantages-services">
+          <ul class="advantages-services list">
             <li class="advantages-services__column block-light-blue block-house">
               <h3 class="advantages-services__title">Жильё</h3>
-              <p>Рекомендуем пожить<br> в настоящем мотеле,<br>
+              <p class="advantages-text">Рекомендуем пожить<br> в настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
             <li class="advantages-services__column block-burger">
               <h3 class="advantages-services__title">Еда</h3>
-              <p>Всегда заказывайте<br>
+              <p class="advantages-text">Всегда заказывайте<br>
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="advantages-services__column block-light-blue block-suvenir">
               <h3 class="advantages-services__title">Сувениры</h3>
-              <p>Не только китайского,<br>
+              <p class="advantages-text">Не только китайского,<br>
                 но и настоящего местного производства!</p>
             </li>
           </ul>
@@ -160,7 +161,8 @@
             <p class="text-strong-center">Заинтересовались?</p>
             <p class="text-center">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
               гостиниц в Седоне</p>
-            <button type="button" class="search__button button button-brown">поиск гостиницы в седоне</button>
+            <button type="button" class="search__button button button-brown button-btn">поиск гостиницы в
+              седоне</button>
 
           </div>
 
@@ -172,8 +174,8 @@
           <h2 class="text-strong-center">Подпишитесь на рассылку</h2>
           <p class="text-center">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" class="subscribe__email" placeholder="Ваш e-mail" name="subscribe-email">
-            <button type="button" class="subscribe__button button blue-button">Подписаться</button>
+            <input type="email" class="subscribe__email" placeholder="Ваш e-mail" name="subscribe-email" required>
+            <button type="submit" class="subscribe__button button blue-button button-btn">Подписаться</button>
           </form>
 
 
@@ -186,7 +188,7 @@
       <footer data-test="footer" class="page-footer">
         <h2 class="visually-hidden">Наши Контакты</h2>
         <p class="visually-hidden">Мы в соцсетях</p>
-        <ul class="footer-social__list">
+        <ul class="footer-social__list list">
           <li class="footer-social__item">
             <a class="footer-social__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
@@ -232,7 +234,7 @@
 
     <div class="modal-container modal-container-close" data-test="modal">
       <div class="modal modal-window">
-        <button class="modal__close-button">
+        <button type="button" class="modal__close-button button-btn">
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -247,14 +249,14 @@
             <div class="field-group">
               <label class="modal-label" for="first-day">Дата заезда:</label>
               <input class="input-field-modal date-form-field" value="27 апреля 2020" type="text" id="first-day"
-                name="select-date" placeholder="Укажите дату">
+                name="select-date" placeholder="Укажите дату" required>
               <span class="modal-text modal-text-error">Мы не можем отправить вас в прошлое.</span>
               <span class="modal-text modal-text-close">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="field-group">
               <label class="modal-label" for="last-day">Дата выезда:</label>
               <input class="input-field-modal date-form-field" value="1 сентября 2023" type="text" id="last-day"
-                name="select-date" placeholder="Укажите дату">
+                name="select-date" placeholder="Укажите дату" required>
               <span class="modal-text modal-text-error modal-text-close">Мы не можем отправить вас в прошлое.</span>
               <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
             </div>
@@ -262,7 +264,7 @@
               <div class="modal-people-count">
                 <label for="adult-person" class="modal-label">Взрослые:</label>
                 <div class="modal-count-block">
-                  <button class="modal-count-button button-reduce-person" type="button">
+                  <button class="modal-count-button button-reduce-person button-btn" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3" />
@@ -271,7 +273,7 @@
                   </button>
                   <input type="number" value="2" min="0" max="10" name="select-number" id="adult-person"
                     class="count-people">
-                  <button class="modal-count-button  button-add-person" type="button">
+                  <button class="modal-count-button  button-add-person button-btn" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3" />
@@ -284,7 +286,9 @@
 
                 <label for="child-person" class="modal-label">Дети:</label>
                 <div class="tooltip">
-                  <button class="tooltip-toggle" type="button">
+
+                  <button class="tooltip-toggle button-btn" type="button" aria-labelledby="tooltip-label-date">
+                    <span class="visually-hidden">Дополнительная информация об отдыхе с детьми</span>
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13" cy="13" r="13" fill="#83B3D3" />
@@ -292,14 +296,14 @@
                         fill="white" />
                     </svg>
                   </button>
-                  <span class="tooltip-text">Укажите количество детей, которые
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
                     будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </div>
 
 
 
                 <div class="modal-count-block">
-                  <button class="modal-count-button  button-reduce-person" type="button">
+                  <button class="modal-count-button  button-reduce-person button-btn" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3" />
@@ -308,7 +312,7 @@
                   </button>
                   <input type="number" value="2" min="0" max="10" name="select-number" id="child-person"
                     class="count-people">
-                  <button class="modal-count-button button-add-person" type="button">
+                  <button class="modal-count-button button-add-person button-btn" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3" />
@@ -318,7 +322,7 @@
                 </div>
               </div>
             </div>
-            <button class="button blue-button button-search-hotel" type="submit">Найти</button>
+            <button class="button blue-button button-search-hotel button-btn" type="submit">Найти</button>
           </form>
         </section>
       </div>
