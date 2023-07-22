@@ -13,10 +13,6 @@ body {
   height: 100%;
 }
 
-a {
-  text-decoration: none;
-}
-
 /*--------------------*/
 
 /*===========Fonts==========*/
@@ -74,6 +70,10 @@ body {
 
 .list li {
   list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .text-strong-center {
@@ -896,7 +896,7 @@ button.user-favourites:focus {
 }
 
 .sorting__select-control {
-  color: #333;
+  color: #333333;
   width: 290px;
   padding: 14px 20px;
   border-radius: 4px;
@@ -1207,7 +1207,7 @@ button.user-favourites:focus {
 }
 
 .modal__title {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   font-size: 30px;
   font-family: inherit;
   font-style: normal;
@@ -1428,7 +1428,7 @@ button.user-favourites:focus {
 .button-search-hotel {
   padding: 18px 77px;
   border-radius: 10px;
-  background: rgba(131, 179, 211, 1);
+  background: #83b3d3;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
